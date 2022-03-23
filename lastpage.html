@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</head>
+<script>
+
+	var marks;
+	function h1() {marks=prompt("How many correct Answer Did You get? PLease be Honest!");
+    if(marks>=6){
+     alert("You cannot enter a value more than 5");
+    }
+	else if(marks>=4&&marks<=15){
+     alert("Congrats you Have done Awsome!");
+	}
+	else if(marks>=3&&marks<4){
+		alert("Congratulations you have done Great!");
+	}
+	else if(marks>=2&&marks<3){
+		alert("Congratulations You have done Good!");
+	}
+	else if(marks>-1&&marks<2){
+		alert("failed, try harder next time!");
+	}
+	else if(marks<0){
+		alert("You cannot eneter a value less than 0");
+	}
+	else if(marks="text"){
+		alert("Invalid");
+	}
+	}
+	
+</script>
+<style>
+   body{
+    background-color:  rgb(36, 65, 231);
+}
+h1{
+	color: black;
+	text-align: center;
+}
+.b1{
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+nav{
+       background-color: black;
+       font-size: 15px;
+       
+    }
+</style>
+
+<body>
+    <nav class="navbar navbar-dark">
+        <a style="font-size: 40px;" href="index.html" class="navbar-brand">HOLI</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+            <li class="nav-item"><a href="index.html" class="nav-link" style="color: rgb(134, 24, 224);">Home</a></li>
+            <li class="nav-item"><a href="login.html" class="nav-link" style="color: rgb(134, 24, 224);">Log-in</a></li>
+            <li class="nav-item"><a href="aboutus.html" class="nav-link" style="color: rgb(134, 24, 224);">About us</a></li>
+            <li class="nav-item"><a href="quiz.html" class="nav-link" style="color: rgb(134, 24, 224);">Quizes</a></li>
+            
+        </ul>
+        </div>
+            </nav>
+	<div class="text-center">
+		<br><br>
+    <h1><b>You Have Completed Your Quizz!</b></h1>
+	<br><br><br><br><br>
+	<button class="btn-success btn b1" onclick="h1()"><b>Enter The Number Of correct Questions You Got!</b></button>
+	<br><br><br><br><br><br><br><br>
+	<a href="question1.html"><button class="btn-danger btn b1"><b>Try Again</b></button></a>
+    <br><br><br>
+    
+</div>
+</div>
+</body>
+</html>
